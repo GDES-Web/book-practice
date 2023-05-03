@@ -1,10 +1,22 @@
-@import url("https://use.typekit.net/zgf7eai.css");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;700&display=swap");
 /* fonts */
 /* colors */
 /* Links */
 .btn {
-  font-family: "brandon-grotesque", sans-serif;
   font-weight: 600;
+  font-family: "Spectral", serif;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.herobtn {
+  padding-top: 50px;
+  align-items: center;
+  display: flex;
 }
 
 .navigation {
@@ -18,7 +30,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "brandon-grotesque", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -75,11 +86,30 @@ svg {
   height: 56px;
 }
 
+.breadcrumb {
+  padding: 0 0.5rem;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: "→";
+}
+
 .hero {
   padding-bottom: 300px;
-  position: relative;
-  display: flex;
-  align-items: center;
   height: 700px;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -87,6 +117,42 @@ svg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 2rem;
+  z-index: 100;
+}
+
+.cards {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  padding: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: max-content 200px 1fr;
+  border: 1px solid black;
+  width: 300px;
+  height: 400px;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 *,
@@ -101,19 +167,18 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "Spectral", serif;
 }
 
 /* Hero */
 .hero {
-  background-image: url(../../images/hero.png);
+  background-image: url(../../images/store.png);
 }
 
 .hero-section-text {
   color: white;
   position: relative;
   top: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
 

@@ -3,9 +3,6 @@ $hero-width: 100vw;
 
 .hero {
     padding-bottom: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
     height: 700px;
     z-index: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -13,4 +10,17 @@ $hero-width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 2rem;
+    z-index: 100;
 }

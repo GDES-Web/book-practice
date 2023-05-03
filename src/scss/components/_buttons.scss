@@ -1,5 +1,15 @@
 .btn {
-  font-family: "brandon-grotesque", sans-serif;
   font-weight: 600;
+  font-family: $fonts;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.herobtn {
+  padding-top: 50px;
+  align-items: center;
+  display: flex;
+}
